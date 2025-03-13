@@ -22,7 +22,6 @@
       "stylesheets" : {
         "files" : ["stylesheets/html.scss"]
       },
-      "javascripts" : {
         "files" : ["javascripts/scripts.js"]
       }
     }
