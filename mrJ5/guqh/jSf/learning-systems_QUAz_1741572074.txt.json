@@ -15,7 +15,6 @@
       "stylesheets" : {
         "files" : ["stylesheets/pdf.scss"]
       }
-    },
     {
       "format" : "html",
       "layout" : "layouts/html.html",
