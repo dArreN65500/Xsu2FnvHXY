@@ -47,7 +47,6 @@ BraceWrapping:
 BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Custom
 #BreakBeforeInheritanceComma: false # Unknown to clang-format-4.0
-BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: false
 #BreakConstructorInitializers: BeforeComma # Unknown to clang-format-4.0
 BreakAfterJavaFieldAnnotations: false
