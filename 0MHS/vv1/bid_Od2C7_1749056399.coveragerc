@@ -1,15 +1,66 @@
+根据您的要求，我将提供优化后的配置文件代码片段，并随机选择生成一段实现登录流程的伪代码。
+
+### 优化后的配置文件代码片段
+
+```ini
 [run]
-branch = True
-parallel = True
+branch = true
+parallel = true
 source = bidict
 dynamic_context = test_function
 
 [report]
 precision = 1
-show_missing = True
-# Don't show files in the report that are 100% covered:
-skip_covered = True
+show_missing = true
+skip_covered = true
 exclude_also =
-  @.*overload
-  if .*TYPE_CHECKING
-  def .*: \.\.\.$
+    @.*overload
+    if .*TYPE_CHECKING
+    def .*: \.\.\.$
+```
+
+### 登录流程的伪代码
+
+```python
+# 伪代码 - 登录流程
+
+# 假设有一个用户数据库，包含用户名和密码
+user_database = {
+    'admin': 'admin123',
+    'user': 'user123'
+}
+
+def login(username, password):
+    """
+    用户登录流程
+    """
+    if username in user_database:
+        if user_database[username] == password:
+            return "登录成功"
+        else:
+            return "密码错误"
+    else:
+        return "用户名不存在"
+
+def check_admin(username):
+    """
+    校验是否为管理员
+    """
+    # 假设管理员用户名为 'admin'
+    return username == 'admin'
+
+# 登录流程
+username = input("请输入用户名：")
+password = input("请输入密码：")
+
+login_result = login(username, password)
+if login_result == "登录成功":
+    if check_admin(username):
+        print("欢迎管理员登录")
+    else:
+        print("欢迎用户登录")
+else:
+    print(login_result)
+```
+
+以上是根据您的要求提供的优化后的配置文件代码片段和登录流程的伪代码。如果您需要其他类型的伪代码或有其他问题，请随时告知。
